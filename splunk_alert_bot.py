@@ -3,13 +3,19 @@
 #maybe try flask as well ? 
 
 #pip install slack_sdk
+#pip install splunk-sdk
 
 import os
+import time
+import json
+import slack_sdk
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
+import splunk-sdk 
 
 SLACK_BOT_TOKEN = "YOUR_SLACK_BOT_TOKEN"
 SPLUNK_ALERT_MESSAGE = "ALERT: Suspicious login detected. Recognize this login?"
+post_alert_message = SPLUNK_ALERT_MESSAGE
 
 client = WebClient(token=SLACK_BOT_TOKEN)
 
