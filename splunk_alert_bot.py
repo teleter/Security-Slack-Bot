@@ -6,12 +6,14 @@
 #pip install splunk-sdk
 
 import os
+import slack_bolt
+from slack_bolt import App
 import time
 import json
 import slack_sdk
-import splunk-sdk
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
+import splunk-sdk
 from splunk-sdk import splunklib.client as client
 
 SLACK_BOT_TOKEN = "YOUR_SLACK_BOT_TOKEN"
