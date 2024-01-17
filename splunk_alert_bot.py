@@ -6,15 +6,12 @@
 #pip install splunk-sdk
 
 import os
-import slack_bolt
 from slack_bolt import App
-import time
 import json
-import slack_sdk
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
-import splunk-sdk
-from splunk-sdk import splunklib.client as client
+from splunk_sdk import splunklib.client as client
+import requests
 
 SLACK_BOT_TOKEN = "YOUR_SLACK_BOT_TOKEN"
 SPLUNK_ALERT_MESSAGE = "ALERT: Suspicious login detected. Recognize this login?"
