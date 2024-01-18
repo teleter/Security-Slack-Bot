@@ -15,7 +15,7 @@ from splunk_sdk import splunklib.client as client
 import requests
 
 # Load configuration from JSON file
-with open("slack_config.json", "r") as config_file:
+with open("slack.json", "r") as config_file:
     config = json.load(config_file)
 
 # Initialize Slack app
