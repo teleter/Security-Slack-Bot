@@ -1,23 +1,32 @@
 {
-    "slack": {
-      "bot_token": "YOUR_SLACK_BOT_TOKEN",
-      "signing_secret": "YOUR_SLACK_SIGNING_SECRET",
-      "channel_id": "YOUR_SLACK_CHANNEL_ID"
-    },
-    "splunk": {
-      "host": "YOUR_SPLUNK_HOST",
-      "port": "YOUR_SPLUNK_PORT",
-      "username": "YOUR_SPLUNK_USERNAME",
-      "password": "YOUR_SPLUNK_PASSWORD",
-      "query": "YOUR_SPLUNK_QUERY"
-    },
-    "rapid7_soar": {
-      "api_url": "YOUR_RAPID7_SOAR_API_URL"
-    },
-    "jira": {
-      "api_url": "YOUR_JIRA_API_URL",
-      "username": "YOUR_JIRA_USERNAME",
-      "password": "YOUR_JIRA_PASSWORD"
-    }
+  "display_information": {
+      "name": "Security Bot",
+      "description": "A security bot to inform users of suspicious logins",
+      "background_color": "#000000"
+  },
+  "features": {
+      "bot_user": {
+          "display_name": "Security Bot",
+          "always_online": true
+      }
+  },
+  "oauth_config": {
+      "scopes": {
+          "bot": [
+              "incoming-webhook",
+              "im:write",
+              "users:read.email",
+              "users:read"
+          ]
+      }
+  },
+  "settings": {
+      "interactivity": {
+          "is_enabled": true,
+          "request_url": "http://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
+      },
+      "org_deploy_enabled": false,
+      "socket_mode_enabled": false,
+      "token_rotation_enabled": false
   }
-  
+}

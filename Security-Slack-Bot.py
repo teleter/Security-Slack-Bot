@@ -1,10 +1,3 @@
-#You'll need to install the library first:
-
-#maybe try flask as well ? 
-
-#pip install slack_sdk
-#pip install splunk-sdk
-
 import os
 from slack_bolt import App
 import json
