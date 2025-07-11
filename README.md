@@ -1,5 +1,7 @@
 # Security-Slack-Bot
-This Repo is now Archived since a SOAR Tool was purchased code is incomplete 
+This Repo is now Archived
+
+Code is incomplete 
 
 A SIRT Slack Bot that will take "suspicious login" alerts from splunk and prompt the affected user via Slack to either click "i recognise this login" or click "i do not recognise this login" If the user clicks i do not recognise this login the bot will ping rapid 7 soar to create a jira ticket in the SIRT dashboard
 
